@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7e8e5">
+  <title>إلى لولي ♡</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Cairo:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="petals" aria-hidden="true"></div>
+  <audio id="song" src="assets/lamah-aydh.mp3" preload="metadata" loop></audio>
+  <button class="music" id="musicBtn" aria-label="تشغيل الموسيقى" hidden>♫ <span>تشغيل الأغنية</span></button>
+
+  <main>
+    <section class="gate screen active" id="gate">
+      <div class="gate-card">
+        <div class="tiny-flower">✿</div>
+        <p class="eyebrow">رسالة صغيرة لشخص كبير في قلبي</p>
+        <div class="envelope" aria-hidden="true"><div class="letter">♡</div></div>
+        <h1>إلى لولي</h1>
+        <p class="muted">فيه حاجة حلوة مستنياكي جوّه...</p>
+        <label for="password">كلمة السر</label>
+        <input id="password" type="password" inputmode="text" placeholder="اكتبي كلمة السر" autocomplete="off">
+        <p class="error" id="error" role="alert"></p>
+        <button class="primary" id="unlock">افتحي رسالتك ♡</button>
+        <small>تلميح صغير: يوم مميز بينا</small>
+      </div>
+    </section>
+
+    <section class="screen welcome" id="welcome">
+      <div class="welcome-inner">
+        <span class="flower">❀</span>
+        <p class="eyebrow">A LITTLE PLACE FOR YOU</p>
+        <h1>أهلًا يا <em>لولي</em> ❤️</h1>
+        <p>عملتلك المكان الصغير ده عشان أحط فيه شوية من اللي جوايا، وذكريات بحبها.</p>
+        <button class="primary next" data-next="letter">كمّلي يا قلبي <span>←</span></button>
+      </div>
+    </section>
+
+    <section class="screen section" id="letter">
+      <div class="section-head"><span>01 — رسالة ليكي</span><i>♡</i></div>
+      <article class="paper">
+        <div class="paper-flower">✿</div>
+        <h2>كل سنة وإنتِ معايا</h2>
+        <p>كل سنة وإنتِ معايا، وربنا يديم لينا الأيام والسنين ❤️</p>
+        <p>عايزك تعرفي إن مهما حصل، ومهما حصل بينا من مشاكل، هتفضلي أقرب شخص لقلبي، وأكتر شخص حبيته من قلبي.</p>
+        <p>وإن إنتِ مش بس كل يوم في بالي، ده إنتِ كل ثانية بتعدي من عمري بتكوني في تفكيري.</p>
+        <p class="signature">بحبك يا لولي ❤️</p>
+      </article>
+      <button class="primary next" data-next="reasons">فيه كمان... <span>←</span></button>
+    </section>
+
+    <section class="screen section" id="reasons">
+      <div class="section-head"><span>02 — حاجات بحبها فيكي</span><i>♡</i></div>
+      <h2 class="center-title">ليه لولي مختلفة؟</h2>
+      <div class="reason-grid">
+        <article class="reason"><b>ضحكتك</b><span>ضحكتك دي لوحدها كفاية تخلّي يومي كله أحلى.</span><i>♡</i></article>
+        <article class="reason"><b>براءتك</b><span>فيكي حاجة جميلة وبريئة بتخليني أحب كل تفصيلة فيكي.</span><i>✿</i></article>
+        <article class="reason"><b>حنيتك</b><span>حنيتك من أكتر الحاجات اللي مخلياني متعلق بكل تفاصيلك.</span><i>♡</i></article>
+        <article class="reason wide"><b>كل حاجة فيكي</b><span>الحقيقة إني مش بحب فيكي حاجة واحدة، أنا بحبك إنتِ بكل تفاصيلك.</span><i>❀</i></article>
+      </div>
+      <button class="primary next" data-next="little">نرجع بالزمن شوية <span>←</span></button>
+    </section>
+
+    <section class="screen section" id="little">
+      <div class="section-head"><span>03 — من زمان أوي</span><i>♡</i></div>
+      <h2 class="center-title">مع بعض لآخر العمر 😂❤️</h2>
+      <p class="intro">كل واحد فينا كان ليه حكاية... ولسه أجمل الحكاية قدامنا.</p>
+      <div class="photo-pair">
+        <figure class="photo-card"><img src="assets/loly-childhood.jpg" alt="لمياء وهي صغيرة"><figcaption>لولي زمان 🌸</figcaption></figure>
+        <figure class="photo-card"><img src="assets/your-childhood-clean.png" alt="صورة من طفولتك"><figcaption>وأنا زمان 😄</figcaption></figure>
+      </div>
+      <div class="caption-pill">مع بعض لآخر العمر 😂❤️</div>
+      <button class="primary next" data-next="memories">ذكرياتنا الحلوة <span>←</span></button>
+    </section>
+
+    <section class="screen section" id="memories">
+      <div class="section-head"><span>04 — حاجات من حكايتنا</span><i>♡</i></div>
+      <h2 class="center-title">تفاصيل صغيرة.. بس غالية</h2>
+      <div class="memory-stack">
+        <figure class="memory-card"><img src="assets/handwritten-memory.jpg" alt="ورقة عليها ذكرى مكتوبة"><figcaption>في حاجات بسيطة بتفضل فاكرة مكانها في القلب.</figcaption></figure>
+        <figure class="memory-card avatar"><img src="assets/game-avatars.jpg" alt="شخصيتان كرتون تمثلاننا"><figcaption>حتى في عالم تاني.. إحنا سوا 🫶</figcaption></figure>
+        <figure class="memory-card chat"><img src="assets/chat-memories.jpg" alt="لقطات من محادثاتنا"><figcaption>كل حاجة بينا حلوة ❤️</figcaption></figure>
+      </div>
+      <p class="memory-note">يمكن مش كل لحظاتنا كانت مثالية، بس كل لحظة فيهم كانت جزء من حكايتنا. بحب ضحكنا، وعتابنا، وتصالحنا، وكل تفصيلة جمعتنا. 🥹</p>
+      <button class="primary next" data-next="counter">فاكرة يوم 23؟ <span>←</span></button>
+    </section>
+
+    <section class="screen section" id="counter">
+      <div class="section-head"><span>05 — يوم مميز</span><i>♡</i></div>
+      <h2 class="center-title">من يوم ما قلتلك بحبك</h2>
+      <p class="intro">23 مارس 2026 — الساعة 3:00 الفجر</p>
+      <div class="counter" id="counterValues">
+        <div><strong id="days">—</strong><span>يوم</span></div>
+        <div><strong id="hours">—</strong><span>ساعة</span></div>
+        <div><strong id="minutes">—</strong><span>دقيقة</span></div>
+        <div><strong id="seconds">—</strong><span>ثانية</span></div>
+      </div>
+      <p class="counter-foot">والحكاية لسه بتكمل ❤️</p>
+      <button class="primary next" data-next="promise">آخر حاجة ليكي <span>←</span></button>
+    </section>
+
+    <section class="screen final-screen" id="promise">
+      <div class="final-card">
+        <span class="big-heart">♡</span>
+        <p class="eyebrow">A PROMISE FROM MY HEART</p>
+        <h2>وعد مني ليكي يا لولي</h2>
+        <p>ربنا يجعلنا من نصيب بعض، وأحقق ليكي كل اللي تتمنيه. 🥹</p>
+        <p>ويا رب نفضل سوا لآخر العمر ❤️</p>
+        <div class="final-line"></div>
+        <p class="signoff">من الشخص اللي اختار قلبك، وبيتمنى يكمل عمره معاكي ❤️</p>
+        <button class="outline" id="again">ارجعي عيشي الحكاية من الأول</button>
+      </div>
+      <footer>صُنِع بكل الحب إلى لولي 🌷</footer>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
